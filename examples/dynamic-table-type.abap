@@ -52,7 +52,7 @@ class worker implementation.
         create data r_some_tab like line of some_tab.
         assign r_some_tab->* to <f_some_tab>.
 
-        r_des ?= cl_abap_typedescr=>describe_by_data( <f_some_tab> ). " ERROR
+        r_des ?= cl_abap_typedescr=>describe_by_data( <f_some_tab> ).
         t_comp = r_des->get_components( ).
 
         loop at t_comp assigning <f_comp>.
