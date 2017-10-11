@@ -200,7 +200,7 @@ lo_send_request->set_sender( lo_sender ).
 
 "Create recipient
 lo_recipient = cl_sapuser_bcs=>create( sy-uname ).
-"lo_recipient = cl_cam_address_bcs=>create_internet_address('friday@island.com' ). " set the e-mail address
+"lo_recipient = cl_cam_address_bcs=>create_internet_address( 'friday@island.com' ). " set the e-mail address
 
 *Set recipient
 lo_send_request->add_recipient(
