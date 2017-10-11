@@ -5,7 +5,7 @@
 *&---------------------------------------------------------------------*
 report z_excel.
 
-* THE SCRIPT CUSTOMIZING
+* THE SCRIPT CUSTOMIZATION
 * In line 19 - set/change the name of sap table. Current value is "ZORDERS"
 * In line 23 - set/change the name of the sap table. Current value is "ZORDERS"
 * In line 89 - set/change the filename. Current value is "C:\Users\r\Desktop\table_test_convert.xls"
