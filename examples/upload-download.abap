@@ -4,6 +4,8 @@ data: it_pdf     type table of tline,
       lv_content type xstring,
       length     like sy-tabix.
 field-symbols <fs_x> type x.
+
+* UPLOAD
 call function 'GUI_UPLOAD'
   exporting
     filename   = 'C:\Documents and Settings\downloaded.pdf '
@@ -12,11 +14,14 @@ call function 'GUI_UPLOAD'
     filelength = length
   tables
     data_tab   = it_pdf.
+
+* PROCESSING
 loop at it_pdf into ls_pdf.
   assign ls_pdf to <fs_x> casting.
   concatenate lv_content <fs_x> into lv_content in byte mode.
 endloop.
 
+* CONVERTING
 call function 'SCMS_XSTRING_TO_BINARY'
   exporting
     buffer        = lv_content
@@ -24,6 +29,8 @@ call function 'SCMS_XSTRING_TO_BINARY'
     output_length = length
   tables
     binary_tab    = lt_data1.
+
+* DOWNLOAD
 call function 'GUI_DOWNLOAD'
   exporting
     bin_filesize = length
