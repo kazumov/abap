@@ -8,7 +8,7 @@ report z_excel.
 * THE SCRIPT CUSTOMIZATION
 * In line 19 - set/change the name of sap table. Current value is "ZORDERS"
 * In line 23 - set/change the name of the sap table. Current value is "ZORDERS"
-* In line 89 - set/change the filename. Current value is "C:\Users\r\Desktop\table_test_convert.xls"
+* In line 89 - set/change the filename. Current value is "C:\Users\r\Desktop\table_test_convert.tsv"
 * In line 158 - set/change the e-mail of sender.
 * In lines 202 and 203 - choose the type of the report delivery local/e-mail
 * In line 203 - set/change e-mail address
@@ -86,7 +86,7 @@ try.
     call function 'GUI_DOWNLOAD'
       exporting
 *       bin_filesize            = encoded_content_length
-        filename                = 'C:\Users\r\Desktop\table_test_convert.xls' " change the path
+        filename                = 'C:\Users\r\Desktop\table_test_convert.tsv' " change the path
         filetype                = 'BIN'
 *       APPEND                  = ' '
 *       WRITE_FIELD_SEPARATOR   = ' '
