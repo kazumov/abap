@@ -33,6 +33,10 @@ SELECT single BUZID
 "populate fields of struture and append to itab
 append wa_t_glu1 to it_t_glu1.
 
+
+*
+* JV_GB01_DIRECT_INPUT - https://www.sapdatasheet.org/abap/func/jv_gb01_direct_input.html
+*
 CALL FUNCTION 'JV_GB01_DIRECT_INPUT'
   EXPORTING
 *   e_docnr =                    "ld_e_docnr - Accounting Document Number: GLU1-DOCNR
